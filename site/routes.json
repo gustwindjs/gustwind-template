@@ -5,6 +5,12 @@
       "title": "gustwind-template",
       "description": "A simple starting point for Gustwind projects"
     },
-    "dataSources": [{ "operation": "readme", "name": "readme" }]
+    "dataSources": [
+      {
+        "operation": "processMarkdown",
+        "parameters": ["./README.md"],
+        "name": "readme"
+      }
+    ]
   }
 }

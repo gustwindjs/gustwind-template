@@ -1,11 +1,12 @@
 import markdown from "./transforms/markdown.ts";
 
-async function readme() {
+async function processMarkdown(filename: string) {
+  // Drop title from the first line
+  // This is not cleanest solution since sometimes you have something else there!
+  // TODO: It would be better to check for the existence of # before removing the line
   return markdown(
-    // Drop title from the first line
-    // This is not cleanest solution since sometimes you have something else there!
-    (await Deno.readTextFile("./README.md")).split("\n").slice(1).join("\n"),
+    (await Deno.readTextFile(filename)).split("\n").slice(1).join("\n"),
   );
 }
 
-export { readme };
+export { processMarkdown };
