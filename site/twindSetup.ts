@@ -1,9 +1,7 @@
-import * as twindColors from "https://cdn.skypack.dev/twind@0.16.16/colors?min";
-import twindTypography from "https://cdn.skypack.dev/@twind/typography@0.0.2?min";
+import presetAutoprefix from "https://esm.sh/@twind/preset-autoprefix@1.0.5";
+import presetTailwind from "https://esm.sh/@twind/preset-tailwind@1.1.1";
+import presetTypography from "https://esm.sh/@twind/preset-typography@1.0.5";
 
 export default {
-  theme: { extend: { colors: twindColors } },
-  plugins: {
-    ...twindTypography(),
-  },
+  presets: [presetAutoprefix(), presetTailwind(), presetTypography()],
 };

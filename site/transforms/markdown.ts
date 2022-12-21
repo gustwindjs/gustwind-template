@@ -1,5 +1,5 @@
 import { marked } from "https://unpkg.com/marked@4.0.0/lib/marked.esm.js";
-import { tw } from "https://cdn.skypack.dev/twind@0.16.16?min";
+import { tw } from "https://esm.sh/@twind/core@1.1.1";
 import highlight from "https://unpkg.com/@highlightjs/cdn-assets@11.3.1/es/core.min.js";
 import highlightBash from "https://unpkg.com/highlight.js@11.3.1/es/languages/bash";
 import highlightJS from "https://unpkg.com/highlight.js@11.3.1/es/languages/javascript";
