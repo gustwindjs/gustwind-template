@@ -1,6 +1,6 @@
 [
   {
-    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/breezewind-router/mod.ts",
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/config-router/mod.ts",
     "options": {
       "dataSourcesPath": "./site/dataSources.ts",
       "routesPath": "./site/routes.json"
@@ -9,9 +9,11 @@
   {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/breezewind-renderer/mod.ts",
     "options": {
-      "componentsPath": "./site/components",
+      "componentLoaders": [
+        { "loader": "json", "path": "./site/components" },
+        { "loader": "json", "path": "./site/layouts" }
+      ],
       "metaPath": "./site/meta.json",
-      "layoutsPath": "./site/layouts",
       "pageUtilitiesPath": "./site/pageUtilities.ts"
     }
   },
