@@ -19,7 +19,7 @@
         { "loader": "html", "path": "./site/layouts" }
       ],
       "metaPath": "./site/meta.json",
-      "pageUtilitiesPath": "./site/pageUtilities.ts"
+      "globalUtilitiesPath": "./site/globalUtilities.ts"
     }
   },
   {
@@ -44,5 +44,12 @@
   {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/twind/mod.ts",
     "options": { "setupPath": "./site/twindSetup.ts" }
+  },
+  {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/sitemap/mod.ts",
+    "options": { "metaPath": "./site/meta.json" }
+  },
+  {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/stats/mod.ts"
   }
 ]
