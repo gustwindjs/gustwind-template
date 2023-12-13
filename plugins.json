@@ -41,7 +41,7 @@
           "src": "https://unpkg.com/sidewind@7.6.0/dist/sidewind.umd.production.min.js"
         }
       ],
-      "scriptsPath": []
+      "scriptsPath": ["./site/scripts"]
     }
   },
   {
