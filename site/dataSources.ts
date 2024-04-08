@@ -1,7 +1,9 @@
 import type { LoadApi } from "https://deno.land/x/gustwind@v0.52.3/types.ts";
-import markdown from "./transforms/markdown.ts";
+import getMarkdown from "./transforms/markdown.ts";
 
 function init({ load }: LoadApi) {
+  const markdown = getMarkdown(load);
+
   async function processMarkdown(
     filename: string,
     o?: { skipFirstLine: boolean },

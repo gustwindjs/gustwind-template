@@ -1,0 +1,11 @@
+{
+  "version": "3",
+  "redirects": {
+    "https://unpkg.com/highlight.js@11.9.0/es/languages/bash": "https://unpkg.com/highlight.js@11.9.0/es/languages/bash.js",
+    "https://unpkg.com/highlight.js@11.9.0/es/languages/javascript": "https://unpkg.com/highlight.js@11.9.0/es/languages/javascript.js",
+    "https://unpkg.com/highlight.js@11.9.0/es/languages/json": "https://unpkg.com/highlight.js@11.9.0/es/languages/json.js",
+    "https://unpkg.com/highlight.js@11.9.0/es/languages/typescript": "https://unpkg.com/highlight.js@11.9.0/es/languages/typescript.js",
+    "https://unpkg.com/highlight.js@11.9.0/es/languages/yaml": "https://unpkg.com/highlight.js@11.9.0/es/languages/yaml.js"
+  },
+  "remote": {}
+}
