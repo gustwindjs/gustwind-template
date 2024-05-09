@@ -1,7 +1,7 @@
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.52.3/types.ts";
+import type { DataSourcesApi } from "https://deno.land/x/gustwind@v0.77.2/types.ts";
 import getMarkdown from "./transforms/markdown.ts";
 
-function init({ load }: LoadApi) {
+function init({ load }: DataSourcesApi) {
   const markdown = getMarkdown(load);
 
   async function processMarkdown(

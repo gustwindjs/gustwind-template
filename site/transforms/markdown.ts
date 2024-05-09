@@ -6,7 +6,7 @@ import highlightJS from "https://unpkg.com/highlight.js@11.9.0/es/languages/java
 import highlightJSON from "https://unpkg.com/highlight.js@11.9.0/es/languages/json";
 import highlightTS from "https://unpkg.com/highlight.js@11.9.0/es/languages/typescript";
 import highlightYAML from "https://unpkg.com/highlight.js@11.9.0/es/languages/yaml";
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.66.2/types.ts";
+import type { DataSourcesApi } from "https://deno.land/x/gustwind@v0.77.2/types.ts";
 import twindSetup from "../twindSetup.ts";
 
 highlight.registerLanguage("bash", highlightBash);
@@ -36,7 +36,7 @@ marked.setOptions({
 
 install(twindSetup);
 
-function getTransformMarkdown(load: LoadApi) {
+function getTransformMarkdown(load: DataSourcesApi["load"]) {
   return function transformMarkdown(input: string) {
     if (typeof input !== "string") {
       console.error("input", input);
