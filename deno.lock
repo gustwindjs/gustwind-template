@@ -38,6 +38,7 @@
     "https://unpkg.com/highlight.js@11.10.0/es/languages/json.js": "efc7b5c9e90f3d07777cc19ac6516679472e6735a74875ae3570a8fc27989a82",
     "https://unpkg.com/highlight.js@11.10.0/es/languages/typescript.js": "345449a1bc746985df7ca31d6c44e114247e889fe30370e785192c84eb6c8409",
     "https://unpkg.com/highlight.js@11.10.0/es/languages/yaml.js": "adcdacd82e5429930d3d66d72366c6ffa31e66dda6effa699335ec7d238f5a70",
+    "https://unpkg.com/marked@15.0.3/lib/marked.esm.js": "908eb95a9441a7d58effe290aaadae29cb9905661c8fe427d22786fdf0b64027",
     "https://unpkg.com/marked@9.1.5/lib/marked.esm.js": "f78241ff04d201946b7a9d23db5d2faa4c454454a632026f225e32d3f75abc22"
   }
 }
