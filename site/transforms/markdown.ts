@@ -35,6 +35,7 @@ marked.setOptions({
   },
 });
 
+// @ts-expect-error This is fine
 install(twindSetup);
 
 function getTransformMarkdown(load: DataSourcesApi["load"]) {
