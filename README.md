@@ -12,3 +12,11 @@ Main features:
 * Build process - `deno task build`
 
 To expand further, see [Gustwind documentation](https://gustwind.js.org/).
+
+## Examples
+
+**Code:**
+
+```javascript
+console.log('Hello world!')
+```

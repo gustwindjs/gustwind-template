@@ -1,12 +1,12 @@
 import { install, tw } from "https://esm.sh/@twind/core@1.1.1";
 import { marked } from "https://unpkg.com/marked@9.1.5/lib/marked.esm.js";
-import highlight from "https://unpkg.com/@highlightjs/cdn-assets@11.9.0/es/core.min.js";
-import highlightBash from "https://unpkg.com/highlight.js@11.9.0/es/languages/bash";
-import highlightJS from "https://unpkg.com/highlight.js@11.9.0/es/languages/javascript";
-import highlightJSON from "https://unpkg.com/highlight.js@11.9.0/es/languages/json";
-import highlightTS from "https://unpkg.com/highlight.js@11.9.0/es/languages/typescript";
-import highlightYAML from "https://unpkg.com/highlight.js@11.9.0/es/languages/yaml";
-import type { DataSourcesApi } from "https://deno.land/x/gustwind@v0.77.2/types.ts";
+import highlight from "https://unpkg.com/@highlightjs/cdn-assets@11.10.0/es/core.min.js";
+import highlightBash from "https://unpkg.com/highlight.js@11.10.0/es/languages/bash";
+import highlightJS from "https://unpkg.com/highlight.js@11.10.0/es/languages/javascript";
+import highlightJSON from "https://unpkg.com/highlight.js@11.10.0/es/languages/json";
+import highlightTS from "https://unpkg.com/highlight.js@11.10.0/es/languages/typescript";
+import highlightYAML from "https://unpkg.com/highlight.js@11.10.0/es/languages/yaml";
+import type { DataSourcesApi } from "https://deno.land/x/gustwind@v0.78.0/types.ts";
 import twindSetup from "../twindSetup.ts";
 
 highlight.registerLanguage("bash", highlightBash);
@@ -72,10 +72,10 @@ function getTransformMarkdown(load: DataSourcesApi["load"]) {
           }
 
           return '<pre class="' +
-            tw`overflow-auto -mx-4 md:mx-0 bg-gray-100` +
+            tw("overflow-auto -mx-4 md:mx-0") +
             '"><code class="' +
             // @ts-ignore How to type this?
-            this.options.langPrefix +
+            (this.options.langPrefix || "") +
             lang +
             '">' +
             code +
@@ -92,7 +92,7 @@ function getTransformMarkdown(load: DataSourcesApi["load"]) {
 
           return '<a href="#' + slug + '"><h' +
             level +
-            ' class="' + tw`inline` + '"' +
+            ' class="' + tw("inline") + '"' +
             ' id="' +
             slug +
             '">' +
