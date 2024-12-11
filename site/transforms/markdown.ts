@@ -111,7 +111,6 @@ function getTransformMarkdown(load: DataSourcesApi["load"]) {
           tw(className)
         }" width="${width}" height="${height}" />`;
       },
-      // link(href: string, title: string, text: string) {
       link({ href, title, tokens }) {
         // @ts-expect-error Parser will exist
         const text = this.parser.parseInline(tokens);
